@@ -148,3 +148,53 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: ex12-top;
+    animation-duration: 4s;
+}
+
+@keyframes ex12-top {
+    0% { left: 10%; }
+    50% { left: 55%; }
+    100% { left: 10%; }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: ex12-bot;
+    animation-duration: 4s;
+}
+
+@keyframes ex12-bot {
+    0% { right: 20%; }
+    50% { right: 55%; }
+    100% { right: 20%; }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: ex13-top 4s linear infinite;
+}
+
+@keyframes ex13-top {
+    0% {left: 10%; top: -10px;}
+    25% {left: calc(100% - 30px); top: -10px;}
+    50% {left: calc(100% - 30px); top: calc(100% - 10px);}
+    75% {left: -30px; top: calc(100% - 10px);}
+    100% {left: 10%; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: ex13-bot 4s linear infinite;
+}
+
+@keyframes ex13-bot {
+    0% {right: 20%; bottom: -10px;}
+    25% {right: calc(100% - 30px); bottom: -10px;}
+    50% {right: calc(100% - 30px); bottom: calc(100% - 10px);}
+    75% {right: -30px; bottom: calc(100% - 10px);}
+    100% {right: 20%; bottom: -10px;}
+}
+
+.well {
+    overflow: hidden;
+}
